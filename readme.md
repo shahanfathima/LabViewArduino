@@ -20,106 +20,26 @@ You can also see and adjust various other port settings, such as the Baud Rate w
 An additional method to confirm your Arduino is communicating with your PC is to open the Arduino IDE.Once loaded, you will have a basic sketch open. Go to Tools and select Port, again you can see COM port 21 confirms the Arduino is present.You can also select Board Info which confirms you are able to communicate with your Arduino.As if you couldn't an error would occur once selected.Now that communication is confirmed. 
 
 Lets open LabVIEW to load the LINX firmware onto the Arduino.
-2:32
-Go to "Tools", select "MakerHub" > "LINX" > "LINX Firmware Wizard".
-2:39
-Once loaded, select the "Device Family" > "Arduino". "Device Type" > "UNO" in my case.
-2:46
-The "Firmware Method"> "USB", click next.
-2:49
-Select the COM port. COM6 in my case.
-2:53
-And then confirm the "Firmware Version" and " Upload Type" then select next.
-2:59
+- Go to "Tools", select "MakerHub" > "LINX" > "LINX Firmware Wizard".
+- Once loaded, select the "Device Family" > "Arduino". "Device Type" > "UNO" 
+- The "Firmware Method"> "USB", click next.
+- Select the COM port. COM21 in my case.
+- Then confirm the "Firmware Version" and " Upload Type" then select next.
+
 Now we wait for the firmware to upload to the Arduino.
-3:02
+
 Now that the firmware has been uploaded, we can begin programming the Arduino in LabVIEW.
-3:06
-Let's begin!
-3:07
-Alright, now that we have loaded the firmware onto the Arduino.
-3:10
-A good place to start,
-3:12
-with hardware I find is to build off an existing example.
-3:14
-Generally when you purchase hardware, it will come with an example.
-3:18
-Whether it's in C, Python or MATLAB etc.
-3:21
-A good starting point is to replicate those examples.
-3:24
-In LabVIEW to confirm that you have the same functionality.
-3:26
-All I'm going to do is demonstrate how I built off the blink sketch example from the Arduino IDE on the left.
-3:32
-And develop this functionality in LabVIEW with the LINX functions.
-3:35
-On the right, you can see the VI front panel I've prepared.
-3:38
-Which show's the indicator's and circuit schematic for the LED connected to the Arduino.
-3:42
-In short, what are we doing? We are turning on and off the LED at a frequency of 1Hz.
-3:47
-In the sketch code, we can see we are writing to the digital input and output pin 13 a HIGH or a LOW value ever second.
-3:54
-What does this do?
-3:55
-When HIGH, 5V is output on pin 13 and the LED turns ON.
-4:00
-When LOW, 0V is output on pin 13 and the LED turns OFF.
-4:04
-In LabVIEW we are replicating this function by writing to pin 13.
-4:07
-On the Arduino, at a frequency we select on the slider control here.
-4:12
-Ok, now that we have a basic theory of operation.
-4:14
-Let's look at the block diagram to understand how we are programming the Arduino.
-4:18
-The first place we are going to start when we create a new VI.
-4:21
-Is to actually locate the LINX functions.
-4:24
-Under the menu, "MakerHub"> "LINX"
-4:26
-Let's pin this so we can see it at all times.
-4:29
-As you can see here there are a few basic and essential functions.
-4:32
-Open and Close, you need to open your VISA session.
-4:36
-To your hardware, whether it's an Arduino or Raspberry Pi or anything else supported by the LINX toolkit.
-4:41
-And then you need to close that session, to exit it properly.
-4:44
-If we look at the left of the block diagram, here, we are opening a VISA session to the Arduino.
-4:49
-Allocating the resources in memory and configuring any serial parameters.
-4:52
-In this case, we are only specifying the serial address, which is COM6.
-4:56
-As we determined previously.
-4:57
-All other configuration settings are set to there default values, such as the baud rate for example.
-5:03
-As we can see this is a polymorphic VI.
-5:06
-Which allows different configurations of communications protocols.
-5:09
-Let's leave this as automatic.
-5:11
-Once we have configured the Open VI.
-5:13
-Let's read its output terminal to confirm we're communicating with the Arduino.
-5:17
-Successfully in LabVIEW.
-5:19
-This will be the third method and final method, confirming we are talking to the Arduino.
-5:24
-It's always a good idea to do a bit of due diligence.
-5:27
-If we select the Open VI and look at the Context Help, we can see an output listed as "Device Name".
+
+
+We have loaded the firmware onto the Arduino.
+
+Here I'm going to do is demonstrate how I built off the blink sketch example from the Arduino IDE on the left.And develop this functionality in LabVIEW with the LINX functions.On the right, you can see the VI front panel I've prepared. Which show's the indicator's and circuit schematic for the LED connected to the Arduino. In the sketch code, we can see we are writing to the digital input and output pin 13 a HIGH or a LOW value ever second. When HIGH, 5V is output on pin 13 and the LED turns ON. When LOW, 0V is output on pin 13 and the LED turns OFF.In LabVIEW we are replicating this function by writing to pin 13.
+
+The first place we are going to start when we create a new VI.Is to actually locate the LINX functions.
+- Under the menu, "MakerHub"> "LINX"
+Let's pin this so we can see it at all times.As you can see here there are a few basic and essential functions. To open and close , you need to open your VISA session.To your hardware, whether it's an Arduino or Raspberry Pi or anything else supported by the LINX toolkit.And then you need to close that session, to exit it properly.
+
+If we look at the left of the block diagram, here, we are opening a VISA session to the Arduino.Allocating the resources in memory and configuring any serial parameters.In this case, we are only specifying the serial address, which is COM21.Let's read its output terminal to confirm we're communicating with the Arduino. If we select the Open VI and look at the Context Help, we can see an output listed as "Device Name".
 5:32
 This will show a string confirming what model Arduino is connected.
 5:36
