@@ -1,26 +1,13 @@
 # Installation
 
 
-0:00
-Hi Everyone, Sin here.
-0:01
-Today we are going to do some engineering and stuff.
-0:03
-And I'm going to show you how to interface your Arduino with LabVIEW.
-0:07
-Before we get started, we require the following items.
-0:10
-An Arduino UNO, MEGA or etc.
-0:13
-LabVIEW 2011 or greater.
-0:15
-The latest NI VISA drivers for your version of LabVIEW.
-0:18
-The JKI VI packager manager.
-0:21
-The LINX add-on.
-0:22
-And lastly, the Arduino drivers and IDE.
+Today we are going to show you how to interface your Arduino with LabVIEW.Before we get started, we require the following items.
+- An Arduino UNO, MEGA or etc.
+- LabVIEW 2011 or greater.
+- The latest NI VISA drivers for your version of LabVIEW.
+- The JKI VI packager manager.
+- The LINX add-on.
+- Arduino drivers and IDE.
 0:25
 Firstly, lets open the VI package manager.
 0:28
