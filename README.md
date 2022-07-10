@@ -8,10 +8,8 @@ Today we are going to show you how to interface your Arduino with LabVIEW.Before
 - The JKI VI packager manager.
 - The LINX add-on.
 - Arduino drivers and IDE.
-0:25
-Firstly, lets open the VI package manager.
-0:28
-Which is a nice utility for downloading various LabVIEW add-ons.
+
+Firstly, lets open the VI package manager.Which is a nice utility for downloading various LabVIEW add-ons.
 0:32
 Next we want to go to the search bar and type in "Arduino".
 0:36
