@@ -22,9 +22,12 @@ An additional method to confirm your Arduino is communicating with your PC is to
 
 Lets open LabVIEW to load the LINX firmware onto the Arduino.
 - Go to "Tools", select "MakerHub" > "LINX" > "LINX Firmware Wizard".
+![LINX firmware](https://github.com/jineshkjose/LabViewArduino/blob/main/imgs/linx%201.png)
 - Once loaded, select the "Device Family" > "Arduino". "Device Type" > "UNO" 
+![LINX firmware](https://github.com/jineshkjose/LabViewArduino/blob/main/imgs/linx2.png)
 - The "Firmware Method"> "USB", click next.
 - Select the COM port. COM21 in my case.
+![LINX firmware](https://github.com/jineshkjose/LabViewArduino/blob/main/imgs/linx3.png)
 - Then confirm the "Firmware Version" and " Upload Type" then select next.
 
 Now we wait for the firmware to upload to the Arduino.
