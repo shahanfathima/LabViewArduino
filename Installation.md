@@ -31,5 +31,6 @@ Lets open LabVIEW to load the LINX firmware onto the Arduino.
 - Then confirm the "Firmware Version" and " Upload Type" then select next.
 
 Now we wait for the firmware to upload to the Arduino.
+![LINX firmware](https://github.com/jineshkjose/LabViewArduino/blob/main/imgs/linx4.png)
 
 Now that the firmware has been uploaded, we can begin programming the Arduino in LabVIEW.
