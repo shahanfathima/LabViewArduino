@@ -31,7 +31,7 @@ The negative points connected to a gnd.
  
 Connect the Arduino board to your computer with the USB cable and start sketching the following program, 
  
-### #Step 3:
+### Step 3:
 Programming
 ~~~
 int led = 12;  
