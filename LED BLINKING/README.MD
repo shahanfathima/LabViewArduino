@@ -1,7 +1,7 @@
 ## Aim
 To perform blinking of led by interfacing with Arduino
 ## Required Material
-Arduino Uno board, Led, Resistor(220ohm), Breadboard
+Arduino Uno board R3, Led, Resistor(220ohm), Breadboard
 wires
 ## Circuit
 ![Magnificent Bigery](https://user-images.githubusercontent.com/109128832/180248141-0e5cff3e-6841-4f53-a867-3da09243c57d.png)
