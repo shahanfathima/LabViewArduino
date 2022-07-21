@@ -1,7 +1,7 @@
 ## Aim
 To print "Hello World" on LCD screen.
 ## Required Material
-Arduino Uno board, lcd 16 x 2 module, Breadboard, Wires
+Arduino Uno R3 board, lcd 16 x 2 module, Breadboard, Wires
 ## Circuit
 ![Super Juttuli](https://user-images.githubusercontent.com/109128832/180261288-afa90db0-c0a5-41ea-9ef9-d1fbd57991a6.png)
 
