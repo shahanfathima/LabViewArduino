@@ -12,7 +12,8 @@ Build the circuit.
  
 Connect the Arduino board to your computer with the USB cable and start sketching the following program, 
  
-### #Step 3: Programming
+### #Step 3:
+Programming
 ~~~
 int ledpin=13;
 int on_time=1000;
