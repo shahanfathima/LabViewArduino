@@ -8,6 +8,7 @@ Arduino Uno board, lcd 16 x 2 module, Breadboard, Wires
 ## Procedure
 ### Step 1:
 Build the circuit.
+
  The circuit:
  * LCD RS pin to digital pin 12
  * LCD Enable pin to digital pin 11
