@@ -1,5 +1,6 @@
 ## Aim
-To perform blinking of led by interfacing with Arduino
+To ON/OFF LED Using Push Button
+
 ## Required Material
 Arduino Uno board
 
