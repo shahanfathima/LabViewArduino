@@ -29,7 +29,7 @@ Build the circuit.
  
 Connect the Arduino board to your computer with the USB cable and start sketching the following program, 
  
-### #Step 3:
+### Step 3:
 Programming
 ~~~
 #include <LiquidCrystal.h>
