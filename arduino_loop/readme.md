@@ -1,7 +1,7 @@
 ## Aim
 To perform blinking of leds by interfacing with Arduino
 ## Required Material
-Arduino Uno board, Red led, Blue led, 2 Resistor(150ohm), Breadboard, wires
+Arduino Uno R3 board, Red led, Blue led, 2 Resistor(150ohm), Breadboard, wires
 ## Circuit
 ![Super Juttuli](https://user-images.githubusercontent.com/109128832/180256414-e1ad5ec4-b20b-4b6c-9ab3-0195c2171c35.png)
 
